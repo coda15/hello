@@ -28,7 +28,7 @@ def hello():
     transcriber = aai.Transcriber()
 
     audio_url = (
-        "audio_2.mp3"
+        uploaded_file
     )
 
     config = aai.TranscriptionConfig(speaker_labels=True)
