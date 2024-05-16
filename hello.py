@@ -3,7 +3,21 @@ from io import StringIO
 import os
 import assemblyai as aai
 
+# title and favicon ------------------------------------------------------------
 
+st.set_page_config(page_title="Speech to Text Transcription App", page_icon="👄")
+
+# _max_width_()
+
+# logo and header -------------------------------------------------
+
+st.text("")
+st.image(
+    "https://emojipedia-us.s3.amazonaws.com/source/skype/289/parrot_1f99c.png",
+    width=125,
+)
+
+st.title("Speech to text transcription app")
 
 uploaded_file = st.file_uploader("Choose a mp3 file", type=["mp3"])
 
