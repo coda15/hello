@@ -1,15 +1,11 @@
 import streamlit as st
-import pandas as pd
-import whisper as wh
 from io import StringIO
-from openai import OpenAI
 import os
 import assemblyai as aai
 
 
 
 uploaded_file = st.file_uploader("Choose a mp3 file", type=["mp3"])
-audio_file= open("audio_2.mp3", "rb")
 
 
 def hello():
