@@ -38,9 +38,9 @@ def hello():
     print(transcript.text)
 
     for utterance in transcript.utterances:
-        print(f"Speaker {utterance.speaker}: {utterance.text}")
+        return utterance.speaker, utterance.text
     
-    return transcript.text
+    # return transcript.text
 
 if uploaded_file is not None:
     st.write(hello())
